@@ -4,3 +4,13 @@ test/
 temp_tess/
 tmp/
 uploads/
+* .jpg
+* .png
+* .jpeg
+* .gif
+* .bmp
+* .tiff
+* .webp
+* .ico
+* .svg
+* .eps
