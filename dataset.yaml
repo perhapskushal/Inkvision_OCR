@@ -1,0 +1,5 @@
+names:
+  0: nepali_text
+path: C:\Users\lenevo\Downloads\Easy_OCR_Test\dataset
+train: train/images
+val: test/images

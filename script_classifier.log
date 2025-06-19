@@ -1,0 +1,198 @@
+2025-05-23 10:59:59,145 - INFO - Using device: cpu
+2025-05-23 11:00:38,229 - INFO - Using device: cpu
+2025-05-23 11:00:38,238 - INFO - Loaded 2789 images:
+2025-05-23 11:00:38,238 - INFO - English (IIIT5k): 2789
+2025-05-23 11:00:38,239 - INFO - Devanagari (archive): 0
+2025-05-23 11:04:25,080 - INFO - Epoch [1/20]
+2025-05-23 11:04:25,081 - INFO - Train Loss: 0.0824, Train Acc: 97.62%
+2025-05-23 11:04:25,082 - INFO - Val Loss: 0.0021, Val Acc: 100.00%
+2025-05-23 11:04:25,286 - INFO - Model saved to models\model_20250523_110425.pth
+2025-05-23 11:05:23,013 - INFO - Using device: cpu
+2025-05-23 11:05:23,022 - INFO - Loaded 2789 images:
+2025-05-23 11:05:23,022 - INFO - English (IIIT5k): 2789
+2025-05-23 11:05:23,023 - INFO - Devanagari (archive): 0
+2025-05-23 11:08:28,806 - INFO - Epoch [1/20]
+2025-05-23 11:08:28,806 - INFO - Train Loss: 0.0776, Train Acc: 98.39%
+2025-05-23 11:08:28,806 - INFO - Val Loss: 0.0018, Val Acc: 100.00%
+2025-05-23 11:08:29,007 - INFO - Model saved to models\model_20250523_110828.pth
+2025-05-23 11:09:26,313 - INFO - Using device: cpu
+2025-05-23 11:09:26,649 - INFO - Loaded 94789 images:
+2025-05-23 11:09:26,654 - INFO - English (IIIT5k): 2789
+2025-05-23 11:09:26,660 - INFO - Devanagari (archive): 92000
+2025-05-23 11:10:42,051 - INFO - Using device: cpu
+2025-05-23 11:10:42,428 - INFO - Loaded 94789 images:
+2025-05-23 11:10:42,432 - INFO - English (IIIT5k): 2789
+2025-05-23 11:10:42,441 - INFO - Devanagari (archive): 92000
+2025-05-23 11:10:42,508 - INFO - Class weights: English=16.99, Devanagari=0.52
+2025-05-23 11:13:07,603 - INFO - Using device: cpu
+2025-05-23 11:13:07,911 - INFO - Loaded 94789 images:
+2025-05-23 11:13:07,915 - INFO - English (IIIT5k): 2789
+2025-05-23 11:13:07,927 - INFO - Devanagari (archive): 92000
+2025-05-23 11:13:07,951 - INFO - Class weights: English=16.99, Devanagari=0.52
+2025-05-23 11:29:11,708 - ERROR - CUDA is not available. Please check your GPU installation.
+2025-05-23 11:36:12,483 - INFO - Using GPU: NVIDIA GeForce RTX 4060 Laptop GPU
+2025-05-23 11:36:12,484 - INFO - CUDA Version: 12.1
+2025-05-23 11:36:12,484 - INFO - GPU Memory: 8.0 GB
+2025-05-23 11:36:12,825 - INFO - Loaded 94789 images:
+2025-05-23 11:36:12,829 - INFO - English (IIIT5k): 2789
+2025-05-23 11:36:12,836 - INFO - Devanagari (archive): 92000
+2025-05-23 11:36:12,881 - INFO - Class weights: English=16.99, Devanagari=0.52
+2025-05-23 11:42:13,440 - INFO - Epoch [1/20]
+2025-05-23 11:42:13,448 - INFO - Train Loss: 0.0192, Train Acc: 98.76%
+2025-05-23 11:42:13,448 - INFO - Train Class Acc - English: 99.73%, Devanagari: 98.73%
+2025-05-23 11:42:13,449 - INFO - Val Loss: 0.0001, Val Acc: 100.00%
+2025-05-23 11:42:13,449 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 11:42:13,778 - INFO - Model saved to models\model_20250523_114213.pth
+2025-05-23 11:47:10,326 - INFO - Epoch [2/20]
+2025-05-23 11:47:10,326 - INFO - Train Loss: 0.0001, Train Acc: 100.00%
+2025-05-23 11:47:10,327 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 11:47:10,327 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 11:47:10,327 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 11:51:29,642 - INFO - Epoch [3/20]
+2025-05-23 11:51:29,642 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-23 11:51:29,642 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 11:51:29,642 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 11:51:29,644 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 11:53:08,934 - INFO - Epoch [4/20]
+2025-05-23 11:53:08,934 - INFO - Train Loss: 0.0001, Train Acc: 100.00%
+2025-05-23 11:53:08,934 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 11:53:08,934 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 11:53:08,935 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 11:54:51,517 - INFO - Epoch [5/20]
+2025-05-23 11:54:51,518 - INFO - Train Loss: 0.0001, Train Acc: 100.00%
+2025-05-23 11:54:51,518 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 11:54:51,519 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 11:54:51,519 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 11:56:32,093 - INFO - Epoch [6/20]
+2025-05-23 11:56:32,094 - INFO - Train Loss: 0.0001, Train Acc: 100.00%
+2025-05-23 11:56:32,094 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 11:56:32,094 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 11:56:32,095 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 11:58:42,143 - INFO - Epoch [7/20]
+2025-05-23 11:58:42,143 - INFO - Train Loss: 0.0029, Train Acc: 99.99%
+2025-05-23 11:58:42,144 - INFO - Train Class Acc - English: 99.91%, Devanagari: 99.99%
+2025-05-23 11:58:42,144 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 11:58:42,144 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:02:52,896 - INFO - Epoch [8/20]
+2025-05-23 12:02:52,896 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-23 12:02:52,897 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:02:52,897 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 12:02:52,897 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:07:13,479 - INFO - Epoch [9/20]
+2025-05-23 12:07:13,480 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-23 12:07:13,481 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:07:13,481 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 12:07:13,481 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:11:10,654 - INFO - Epoch [10/20]
+2025-05-23 12:11:10,655 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-23 12:11:10,655 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:11:10,655 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 12:11:10,656 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:14:45,195 - INFO - Epoch [11/20]
+2025-05-23 12:14:45,196 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-23 12:14:45,196 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:14:45,196 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 12:14:45,197 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:18:33,412 - INFO - Epoch [12/20]
+2025-05-23 12:18:33,413 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-23 12:18:33,413 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:18:33,413 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 12:18:33,414 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:22:23,209 - INFO - Epoch [13/20]
+2025-05-23 12:22:23,209 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-23 12:22:23,209 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:22:23,210 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 12:22:23,210 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:26:19,262 - INFO - Epoch [14/20]
+2025-05-23 12:26:19,262 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-23 12:26:19,262 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:26:19,262 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 12:26:19,263 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:29:52,532 - INFO - Epoch [15/20]
+2025-05-23 12:29:52,533 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-23 12:29:52,533 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:29:52,533 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 12:29:52,533 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:33:47,692 - INFO - Epoch [16/20]
+2025-05-23 12:33:47,693 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-23 12:33:47,693 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:33:47,693 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 12:33:47,694 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:37:40,823 - INFO - Epoch [17/20]
+2025-05-23 12:37:40,823 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-23 12:37:40,823 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:37:40,824 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 12:37:40,824 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:41:52,705 - INFO - Epoch [18/20]
+2025-05-23 12:41:52,706 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-23 12:41:52,707 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 12:41:52,707 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 12:41:52,707 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 14:58:30,855 - INFO - Epoch [19/20]
+2025-05-23 14:58:30,862 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-23 14:58:30,863 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 14:58:30,863 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 14:58:30,864 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 15:02:38,812 - INFO - Epoch [20/20]
+2025-05-23 15:02:38,815 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-23 15:02:38,815 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-23 15:02:38,815 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-23 15:02:38,816 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 11:51:17,117 - INFO - Using GPU: NVIDIA GeForce RTX 4060 Laptop GPU
+2025-05-25 11:51:17,117 - INFO - CUDA Version: 12.1
+2025-05-25 11:51:17,117 - INFO - GPU Memory: 8.0 GB
+2025-05-25 11:51:17,442 - INFO - Loaded 94789 images:
+2025-05-25 11:51:17,446 - INFO - English (IIIT5k): 2789
+2025-05-25 11:51:17,453 - INFO - Devanagari (archive): 92000
+2025-05-25 11:51:17,542 - INFO - Class weights: English=16.99, Devanagari=0.52
+2025-05-25 11:57:17,186 - INFO - Epoch [1/10]
+2025-05-25 11:57:17,200 - INFO - Train Loss: 0.0198, Train Acc: 99.17%
+2025-05-25 11:57:17,200 - INFO - Train Class Acc - English: 99.45%, Devanagari: 99.16%
+2025-05-25 11:57:17,200 - INFO - Val Loss: 0.0003, Val Acc: 100.00%
+2025-05-25 11:57:17,201 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 11:57:17,596 - INFO - Model saved to models\model_20250525_115717.pth
+2025-05-25 12:01:56,235 - INFO - Epoch [2/10]
+2025-05-25 12:01:56,235 - INFO - Train Loss: 0.0001, Train Acc: 100.00%
+2025-05-25 12:01:56,236 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:01:56,236 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-25 12:01:56,236 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:04:07,265 - INFO - Epoch [3/10]
+2025-05-25 12:04:07,265 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-25 12:04:07,265 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:04:07,266 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-25 12:04:07,266 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:07:31,145 - INFO - Epoch [4/10]
+2025-05-25 12:07:31,145 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-25 12:07:31,146 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:07:31,146 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-25 12:07:31,146 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:09:50,439 - INFO - Epoch [5/10]
+2025-05-25 12:09:50,439 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-25 12:09:50,440 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:09:50,440 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-25 12:09:50,440 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:12:00,157 - INFO - Epoch [6/10]
+2025-05-25 12:12:00,158 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-25 12:12:00,158 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:12:00,158 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-25 12:12:00,159 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:14:11,123 - INFO - Epoch [7/10]
+2025-05-25 12:14:11,123 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-25 12:14:11,123 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:14:11,124 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-25 12:14:11,124 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:16:21,120 - INFO - Epoch [8/10]
+2025-05-25 12:16:21,121 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-25 12:16:21,121 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:16:21,122 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-25 12:16:21,122 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:18:30,884 - INFO - Epoch [9/10]
+2025-05-25 12:18:30,884 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-25 12:18:30,885 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:18:30,885 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-25 12:18:30,885 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:20:40,423 - INFO - Epoch [10/10]
+2025-05-25 12:20:40,424 - INFO - Train Loss: 0.0000, Train Acc: 100.00%
+2025-05-25 12:20:40,424 - INFO - Train Class Acc - English: 100.00%, Devanagari: 100.00%
+2025-05-25 12:20:40,424 - INFO - Val Loss: 0.0000, Val Acc: 100.00%
+2025-05-25 12:20:40,425 - INFO - Val Class Acc - English: 100.00%, Devanagari: 100.00%

@@ -1,0 +1,722 @@
+2025-05-18 13:23:17,318 - INFO - Using device: cuda
+2025-05-18 13:23:22,977 - INFO - Loaded 7200 valid samples
+2025-05-18 13:23:22,980 - INFO - Model structure: Model(
+  (FeatureExtraction): ResNet_FeatureExtractor(
+    (ConvNet): ResNet(
+      (conv0_1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn0_1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv0_2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn0_2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (maxpool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (layer1): Sequential(
+        (0): BasicBlock(
+          (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+          (downsample): Sequential(
+            (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (maxpool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (layer2): Sequential(
+        (0): BasicBlock(
+          (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+          (downsample): Sequential(
+            (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (1): BasicBlock(
+          (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (maxpool3): MaxPool2d(kernel_size=2, stride=(2, 1), padding=(0, 1), dilation=1, ceil_mode=False)
+      (layer3): Sequential(
+        (0): BasicBlock(
+          (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+          (downsample): Sequential(
+            (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (1): BasicBlock(
+          (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (2): BasicBlock(
+          (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (3): BasicBlock(
+          (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (4): BasicBlock(
+          (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (conv3): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (layer4): Sequential(
+        (0): BasicBlock(
+          (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicBlock(
+          (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (2): BasicBlock(
+          (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (conv4_1): Conv2d(512, 512, kernel_size=(2, 2), stride=(2, 1), padding=(0, 1), bias=False)
+      (bn4_1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv4_2): Conv2d(512, 512, kernel_size=(2, 2), stride=(1, 1), bias=False)
+      (bn4_2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (AdaptiveAvgPool): AdaptiveAvgPool2d(output_size=(None, 1))
+  (SequenceModeling): Sequential(
+    (0): BidirectionalLSTM(
+      (rnn): LSTM(512, 512, batch_first=True, bidirectional=True)
+      (linear): Linear(in_features=1024, out_features=512, bias=True)
+    )
+    (1): BidirectionalLSTM(
+      (rnn): LSTM(512, 512, batch_first=True, bidirectional=True)
+      (linear): Linear(in_features=1024, out_features=512, bias=True)
+    )
+  )
+  (Prediction): Linear(in_features=512, out_features=188, bias=True)
+)
+2025-05-18 13:23:23,000 - INFO - Number of classes: 61
+2025-05-18 13:23:23,001 - INFO - Found Prediction layer: Prediction
+2025-05-18 13:23:23,002 - INFO - Replaced Prediction layer with new layer: in_features=512, out_features=61
+2025-05-18 13:23:23,012 - INFO - 
+Starting training with 7200 samples
+2025-05-18 13:23:23,012 - INFO - Number of classes: 61
+2025-05-18 13:23:23,013 - INFO - Batch size: 32
+2025-05-18 13:23:23,013 - INFO - Number of batches per epoch: 225
+2025-05-18 13:23:23,014 - INFO - 
+Epoch 1/100
+2025-05-18 13:23:49,561 - INFO - 
+First batch shapes:
+2025-05-18 13:23:49,561 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 13:23:49,562 - INFO - Labels shape: torch.Size([32])
+2025-05-18 13:23:49,568 - INFO - Labels sample: tensor([ 9,  8,  2, 28, 27], device='cuda:0')
+2025-05-18 13:24:11,510 - INFO - 
+Epoch 1 completed:
+2025-05-18 13:24:11,510 - INFO - Average Loss: 0.9775
+2025-05-18 13:24:11,510 - INFO - Learning Rate: 0.000043
+2025-05-18 13:24:12,529 - INFO - Saved best model with loss: 0.9775
+2025-05-18 13:24:12,530 - INFO - 
+Epoch 2/100
+2025-05-18 13:24:38,833 - INFO - 
+First batch shapes:
+2025-05-18 13:24:38,833 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 13:24:38,834 - INFO - Labels shape: torch.Size([32])
+2025-05-18 13:24:38,835 - INFO - Labels sample: tensor([ 5, 11, 27,  9, 25], device='cuda:0')
+2025-05-18 13:24:59,218 - INFO - 
+Epoch 2 completed:
+2025-05-18 13:24:59,218 - INFO - Average Loss: 0.0468
+2025-05-18 13:24:59,218 - INFO - Learning Rate: 0.000050
+2025-05-18 13:25:00,217 - INFO - Saved best model with loss: 0.0468
+2025-05-18 13:25:00,218 - INFO - 
+Epoch 3/100
+2025-05-18 13:25:27,576 - INFO - 
+First batch shapes:
+2025-05-18 13:25:27,577 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 13:25:27,577 - INFO - Labels shape: torch.Size([32])
+2025-05-18 13:25:27,578 - INFO - Labels sample: tensor([ 3, 11,  5, 33, 30], device='cuda:0')
+2025-05-18 13:25:47,930 - INFO - 
+Epoch 3 completed:
+2025-05-18 13:25:47,931 - INFO - Average Loss: 0.0167
+2025-05-18 13:25:47,931 - INFO - Learning Rate: 0.000063
+2025-05-18 13:25:48,874 - INFO - Saved best model with loss: 0.0167
+2025-05-18 13:25:48,876 - INFO - 
+Epoch 4/100
+2025-05-18 13:26:15,813 - INFO - 
+First batch shapes:
+2025-05-18 13:26:15,815 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 13:26:15,815 - INFO - Labels shape: torch.Size([32])
+2025-05-18 13:26:15,816 - INFO - Labels sample: tensor([14, 24,  1, 30,  4], device='cuda:0')
+2025-05-18 13:26:36,327 - INFO - 
+Epoch 4 completed:
+2025-05-18 13:26:36,328 - INFO - Average Loss: 0.0169
+2025-05-18 13:26:36,328 - INFO - Learning Rate: 0.000082
+2025-05-18 13:26:36,329 - INFO - 
+Epoch 5/100
+2025-05-18 13:27:03,485 - INFO - 
+First batch shapes:
+2025-05-18 13:27:03,485 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 13:27:03,485 - INFO - Labels shape: torch.Size([32])
+2025-05-18 13:27:03,487 - INFO - Labels sample: tensor([25,  7, 32, 26, 33], device='cuda:0')
+2025-05-18 13:27:23,537 - INFO - 
+Epoch 5 completed:
+2025-05-18 13:27:23,538 - INFO - Average Loss: 0.0606
+2025-05-18 13:27:23,538 - INFO - Learning Rate: 0.000104
+2025-05-18 13:27:23,539 - INFO - 
+Epoch 6/100
+2025-05-18 13:27:50,150 - INFO - 
+First batch shapes:
+2025-05-18 13:27:50,151 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 13:27:50,151 - INFO - Labels shape: torch.Size([32])
+2025-05-18 13:27:50,152 - INFO - Labels sample: tensor([ 0, 34, 19, 20, 26], device='cuda:0')
+2025-05-18 13:28:10,450 - INFO - 
+Epoch 6 completed:
+2025-05-18 13:28:10,451 - INFO - Average Loss: 0.0564
+2025-05-18 13:28:10,451 - INFO - Learning Rate: 0.000132
+2025-05-18 13:28:10,452 - INFO - 
+Epoch 7/100
+2025-05-18 13:28:36,927 - INFO - 
+First batch shapes:
+2025-05-18 13:28:36,928 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 13:28:36,928 - INFO - Labels shape: torch.Size([32])
+2025-05-18 13:28:36,929 - INFO - Labels sample: tensor([11, 11,  3, 24, 20], device='cuda:0')
+2025-05-18 13:28:57,373 - INFO - 
+Epoch 7 completed:
+2025-05-18 13:28:57,374 - INFO - Average Loss: 0.0579
+2025-05-18 13:28:57,374 - INFO - Learning Rate: 0.000163
+2025-05-18 13:28:57,375 - INFO - 
+Epoch 8/100
+2025-05-18 13:29:24,739 - INFO - 
+First batch shapes:
+2025-05-18 13:29:24,746 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 13:29:24,746 - INFO - Labels shape: torch.Size([32])
+2025-05-18 13:29:24,748 - INFO - Labels sample: tensor([23, 35, 16, 32, 34], device='cuda:0')
+2025-05-18 13:29:45,115 - INFO - 
+Epoch 8 completed:
+2025-05-18 13:29:45,115 - INFO - Average Loss: 0.0432
+2025-05-18 13:29:45,116 - INFO - Learning Rate: 0.000199
+2025-05-18 13:29:45,116 - INFO - 
+Epoch 9/100
+2025-05-18 13:30:14,701 - INFO - 
+First batch shapes:
+2025-05-18 13:30:14,715 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 13:30:14,716 - INFO - Labels shape: torch.Size([32])
+2025-05-18 13:30:14,718 - INFO - Labels sample: tensor([ 2,  2, 35, 30, 24], device='cuda:0')
+2025-05-18 13:30:34,928 - INFO - 
+Epoch 9 completed:
+2025-05-18 13:30:34,929 - INFO - Average Loss: 0.0839
+2025-05-18 13:30:34,930 - INFO - Learning Rate: 0.000238
+2025-05-18 13:30:34,930 - INFO - 
+Epoch 10/100
+2025-05-18 20:43:01,788 - INFO - Using device: cuda
+2025-05-18 20:43:05,590 - INFO - Loaded 7200 valid samples
+2025-05-18 20:43:05,592 - INFO - Model structure: Model(
+  (FeatureExtraction): ResNet_FeatureExtractor(
+    (ConvNet): ResNet(
+      (conv0_1): Conv2d(1, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn0_1): BatchNorm2d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv0_2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn0_2): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (relu): ReLU(inplace=True)
+      (maxpool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (layer1): Sequential(
+        (0): BasicBlock(
+          (conv1): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+          (downsample): Sequential(
+            (0): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+      )
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (maxpool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (layer2): Sequential(
+        (0): BasicBlock(
+          (conv1): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+          (downsample): Sequential(
+            (0): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (1): BasicBlock(
+          (conv1): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (conv2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn2): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (maxpool3): MaxPool2d(kernel_size=2, stride=(2, 1), padding=(0, 1), dilation=1, ceil_mode=False)
+      (layer3): Sequential(
+        (0): BasicBlock(
+          (conv1): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+          (downsample): Sequential(
+            (0): Conv2d(256, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          )
+        )
+        (1): BasicBlock(
+          (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (2): BasicBlock(
+          (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (3): BasicBlock(
+          (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (4): BasicBlock(
+          (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (conv3): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+      (bn3): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (layer4): Sequential(
+        (0): BasicBlock(
+          (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (1): BasicBlock(
+          (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+        (2): BasicBlock(
+          (conv1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (conv2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+          (bn2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (relu): ReLU(inplace=True)
+        )
+      )
+      (conv4_1): Conv2d(512, 512, kernel_size=(2, 2), stride=(2, 1), padding=(0, 1), bias=False)
+      (bn4_1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (conv4_2): Conv2d(512, 512, kernel_size=(2, 2), stride=(1, 1), bias=False)
+      (bn4_2): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    )
+  )
+  (AdaptiveAvgPool): AdaptiveAvgPool2d(output_size=(None, 1))
+  (SequenceModeling): Sequential(
+    (0): BidirectionalLSTM(
+      (rnn): LSTM(512, 512, batch_first=True, bidirectional=True)
+      (linear): Linear(in_features=1024, out_features=512, bias=True)
+    )
+    (1): BidirectionalLSTM(
+      (rnn): LSTM(512, 512, batch_first=True, bidirectional=True)
+      (linear): Linear(in_features=1024, out_features=512, bias=True)
+    )
+  )
+  (Prediction): Linear(in_features=512, out_features=188, bias=True)
+)
+2025-05-18 20:43:05,593 - INFO - Number of classes: 61
+2025-05-18 20:43:05,593 - INFO - Found Prediction layer: Prediction
+2025-05-18 20:43:05,594 - INFO - Replaced Prediction layer with new layer: in_features=512, out_features=61
+2025-05-18 20:43:05,621 - INFO - 
+Starting training with 7200 samples
+2025-05-18 20:43:05,622 - INFO - Number of classes: 61
+2025-05-18 20:43:05,622 - INFO - Batch size: 32
+2025-05-18 20:43:05,622 - INFO - Number of batches per epoch: 225
+2025-05-18 20:43:05,623 - INFO - 
+Epoch 1/100
+2025-05-18 20:43:25,211 - INFO - 
+First batch shapes:
+2025-05-18 20:43:25,211 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 20:43:25,212 - INFO - Labels shape: torch.Size([32])
+2025-05-18 20:43:25,216 - INFO - Labels sample: tensor([ 0, 30, 13, 18, 18], device='cuda:0')
+2025-05-18 20:43:41,394 - INFO - 
+Epoch 1 completed:
+2025-05-18 20:43:41,394 - INFO - Average Loss: 1.0552
+2025-05-18 20:43:41,394 - INFO - Learning Rate: 0.000043
+2025-05-18 20:43:42,072 - INFO - Saved best model with loss: 1.0552
+2025-05-18 20:43:42,073 - INFO - 
+Epoch 2/100
+2025-05-18 20:44:05,565 - INFO - 
+First batch shapes:
+2025-05-18 20:44:05,571 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 20:44:05,572 - INFO - Labels shape: torch.Size([32])
+2025-05-18 20:44:05,573 - INFO - Labels sample: tensor([11,  4,  3, 22, 29], device='cuda:0')
+2025-05-18 20:44:24,318 - INFO - 
+Epoch 2 completed:
+2025-05-18 20:44:24,318 - INFO - Average Loss: 0.0488
+2025-05-18 20:44:24,318 - INFO - Learning Rate: 0.000050
+2025-05-18 20:44:25,244 - INFO - Saved best model with loss: 0.0488
+2025-05-18 20:44:25,245 - INFO - 
+Epoch 3/100
+2025-05-18 20:44:50,972 - INFO - 
+First batch shapes:
+2025-05-18 20:44:50,973 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 20:44:50,973 - INFO - Labels shape: torch.Size([32])
+2025-05-18 20:44:50,974 - INFO - Labels sample: tensor([ 2, 31, 29, 15, 29], device='cuda:0')
+2025-05-18 20:45:09,458 - INFO - 
+Epoch 3 completed:
+2025-05-18 20:45:09,459 - INFO - Average Loss: 0.0252
+2025-05-18 20:45:09,459 - INFO - Learning Rate: 0.000063
+2025-05-18 20:45:10,424 - INFO - Saved best model with loss: 0.0252
+2025-05-18 20:45:10,425 - INFO - 
+Epoch 4/100
+2025-05-18 20:45:35,945 - INFO - 
+First batch shapes:
+2025-05-18 20:45:35,954 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 20:45:35,957 - INFO - Labels shape: torch.Size([32])
+2025-05-18 20:45:35,959 - INFO - Labels sample: tensor([12, 14, 23, 25,  2], device='cuda:0')
+2025-05-18 20:45:54,485 - INFO - 
+Epoch 4 completed:
+2025-05-18 20:45:54,486 - INFO - Average Loss: 0.0212
+2025-05-18 20:45:54,486 - INFO - Learning Rate: 0.000082
+2025-05-18 20:45:55,408 - INFO - Saved best model with loss: 0.0212
+2025-05-18 20:45:55,409 - INFO - 
+Epoch 5/100
+2025-05-18 20:46:20,568 - INFO - 
+First batch shapes:
+2025-05-18 20:46:20,574 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 20:46:20,575 - INFO - Labels shape: torch.Size([32])
+2025-05-18 20:46:20,576 - INFO - Labels sample: tensor([ 3, 13, 15, 16, 15], device='cuda:0')
+2025-05-18 20:46:38,873 - INFO - 
+Epoch 5 completed:
+2025-05-18 20:46:38,873 - INFO - Average Loss: 0.0366
+2025-05-18 20:46:38,875 - INFO - Learning Rate: 0.000104
+2025-05-18 20:46:38,876 - INFO - 
+Epoch 6/100
+2025-05-18 20:47:07,262 - INFO - 
+First batch shapes:
+2025-05-18 20:47:07,262 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 20:47:07,263 - INFO - Labels shape: torch.Size([32])
+2025-05-18 20:47:07,263 - INFO - Labels sample: tensor([15, 20,  8, 10, 17], device='cuda:0')
+2025-05-18 20:47:25,865 - INFO - 
+Epoch 6 completed:
+2025-05-18 20:47:25,865 - INFO - Average Loss: 0.0505
+2025-05-18 20:47:25,866 - INFO - Learning Rate: 0.000132
+2025-05-18 20:47:25,867 - INFO - 
+Epoch 7/100
+2025-05-18 20:47:53,714 - INFO - 
+First batch shapes:
+2025-05-18 20:47:53,717 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 20:47:53,718 - INFO - Labels shape: torch.Size([32])
+2025-05-18 20:47:53,719 - INFO - Labels sample: tensor([33, 34, 27, 31, 14], device='cuda:0')
+2025-05-18 20:48:12,337 - INFO - 
+Epoch 7 completed:
+2025-05-18 20:48:12,338 - INFO - Average Loss: 0.0846
+2025-05-18 20:48:12,338 - INFO - Learning Rate: 0.000163
+2025-05-18 20:48:12,339 - INFO - 
+Epoch 8/100
+2025-05-18 20:48:37,991 - INFO - 
+First batch shapes:
+2025-05-18 20:48:37,992 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 20:48:37,992 - INFO - Labels shape: torch.Size([32])
+2025-05-18 20:48:37,993 - INFO - Labels sample: tensor([31, 26,  3, 15,  2], device='cuda:0')
+2025-05-18 20:48:56,712 - INFO - 
+Epoch 8 completed:
+2025-05-18 20:48:56,712 - INFO - Average Loss: 0.0713
+2025-05-18 20:48:56,712 - INFO - Learning Rate: 0.000199
+2025-05-18 20:48:56,713 - INFO - 
+Epoch 9/100
+2025-05-18 20:49:24,230 - INFO - 
+First batch shapes:
+2025-05-18 20:49:24,239 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 20:49:24,239 - INFO - Labels shape: torch.Size([32])
+2025-05-18 20:49:24,241 - INFO - Labels sample: tensor([26,  6, 23, 12, 25], device='cuda:0')
+2025-05-18 20:49:42,856 - INFO - 
+Epoch 9 completed:
+2025-05-18 20:49:42,856 - INFO - Average Loss: 0.0528
+2025-05-18 20:49:42,856 - INFO - Learning Rate: 0.000238
+2025-05-18 20:49:42,857 - INFO - 
+Epoch 10/100
+2025-05-18 20:50:08,026 - INFO - 
+First batch shapes:
+2025-05-18 20:50:08,027 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 20:50:08,027 - INFO - Labels shape: torch.Size([32])
+2025-05-18 20:50:08,028 - INFO - Labels sample: tensor([ 2, 14, 15, 23, 29], device='cuda:0')
+2025-05-18 20:50:26,742 - INFO - 
+Epoch 10 completed:
+2025-05-18 20:50:26,742 - INFO - Average Loss: 0.0929
+2025-05-18 20:50:26,744 - INFO - Learning Rate: 0.000280
+2025-05-18 20:50:26,744 - INFO - 
+Epoch 11/100
+2025-05-18 20:50:51,911 - INFO - 
+First batch shapes:
+2025-05-18 20:50:51,915 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 20:50:51,915 - INFO - Labels shape: torch.Size([32])
+2025-05-18 20:50:51,917 - INFO - Labels sample: tensor([17, 26,  7, 34, 22], device='cuda:0')
+2025-05-18 20:51:10,206 - INFO - 
+Epoch 11 completed:
+2025-05-18 20:51:10,207 - INFO - Average Loss: 0.0815
+2025-05-18 20:51:10,207 - INFO - Learning Rate: 0.000325
+2025-05-18 20:51:10,208 - INFO - 
+Epoch 12/100
+2025-05-18 20:51:35,075 - INFO - 
+First batch shapes:
+2025-05-18 20:51:35,077 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 20:51:35,077 - INFO - Labels shape: torch.Size([32])
+2025-05-18 20:51:35,078 - INFO - Labels sample: tensor([12,  9, 22, 12, 24], device='cuda:0')
+2025-05-18 20:51:53,619 - INFO - 
+Epoch 12 completed:
+2025-05-18 20:51:53,619 - INFO - Average Loss: 0.0650
+2025-05-18 20:51:53,620 - INFO - Learning Rate: 0.000372
+2025-05-18 20:51:53,620 - INFO - 
+Epoch 13/100
+2025-05-18 20:52:19,300 - INFO - 
+First batch shapes:
+2025-05-18 20:52:19,304 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 20:52:19,306 - INFO - Labels shape: torch.Size([32])
+2025-05-18 20:52:19,308 - INFO - Labels sample: tensor([27, 29, 13, 21,  5], device='cuda:0')
+2025-05-18 20:52:37,663 - INFO - 
+Epoch 13 completed:
+2025-05-18 20:52:37,663 - INFO - Average Loss: 0.0817
+2025-05-18 20:52:37,664 - INFO - Learning Rate: 0.000420
+2025-05-18 20:52:37,664 - INFO - 
+Epoch 14/100
+2025-05-18 20:53:02,859 - INFO - 
+First batch shapes:
+2025-05-18 20:53:02,866 - INFO - Images shape: torch.Size([32, 1, 32, 32])
+2025-05-18 20:53:02,868 - INFO - Labels shape: torch.Size([32])
+2025-05-18 20:53:02,869 - INFO - Labels sample: tensor([19, 35,  1,  4,  5], device='cuda:0')
+2025-05-18 20:53:21,280 - INFO - 
+Epoch 14 completed:
+2025-05-18 20:53:21,280 - INFO - Average Loss: 0.0873
+2025-05-18 20:53:21,280 - INFO - Learning Rate: 0.000470
+2025-05-18 20:53:21,281 - INFO - Early stopping triggered after 14 epochs
+2025-05-19 12:22:37,836 - ERROR - Error loading labels with utf-8 encoding: Error tokenizing data. C error: Expected 2 fields in line 237, saw 3
+
+2025-05-19 12:22:37,854 - INFO - Successfully loaded labels using utf-16 encoding
+2025-05-19 12:22:37,855 - INFO - Loaded 4358 labels from archive\labels.csv
+2025-05-19 12:22:37,974 - WARNING - Image not found: archive\crops\19.jpg that 
+2025-05-19 12:22:38,114 - WARNING - Image not found: archive\crops\61.jpg Head
+2025-05-19 12:22:38,133 - WARNING - Image not found: archive\crops\68.jpg Book 
+2025-05-19 12:22:38,137 - WARNING - Image not found: archive\crops\70.jpg .blogspot.co
+2025-05-19 12:22:38,311 - WARNING - Image not found: archive\crops\132.jpg basics
+2025-05-19 12:22:38,329 - WARNING - Image not found: archive\crops\139.jpg -
+2025-05-19 12:22:38,332 - WARNING - Image not found: archive\crops\141.jpg -
+2025-05-19 12:22:38,385 - WARNING - Image not found: archive\crops\161.jpg Ball 
+2025-05-19 12:22:38,441 - WARNING - Image not found: archive\crops\182.jpg PAGE
+2025-05-19 12:22:38,511 - WARNING - Image not found: archive\crops\201.jpg -
+2025-05-19 12:22:38,540 - WARNING - Image not found: archive\crops\210.jpg THANKING
+2025-05-19 12:22:38,544 - WARNING - Image not found: archive\crops\212.jpg WWW.
+2025-05-19 12:22:38,662 - WARNING - Image not found: archive\crops\258.jpg -
+2025-05-19 12:22:38,721 - WARNING - Image not found: archive\crops\281.jpg NATIONAL 
+2025-05-19 12:22:38,722 - WARNING - Image not found: archive\crops\282.jpg -
+2025-05-19 12:22:38,837 - WARNING - Image not found: archive\crops\321.jpg NTC
+2025-05-19 12:22:38,916 - WARNING - Image not found: archive\crops\348.jpg unacceptably 
+2025-05-19 12:22:38,983 - WARNING - Image not found: archive\crops\372.jpg Rule
+2025-05-19 12:22:39,075 - WARNING - Image not found: archive\crops\406.jpg -
+2025-05-19 12:22:39,111 - WARNING - Image not found: archive\crops\420.jpg Rate
+2025-05-19 12:22:39,111 - WARNING - Image not found: archive\crops\421.jpg -
+2025-05-19 12:22:39,131 - WARNING - Image not found: archive\crops\429.jpg page 
+2025-05-19 12:22:39,211 - WARNING - Image not found: archive\crops\458.jpg -
+2025-05-19 12:22:39,214 - WARNING - Image not found: archive\crops\460.jpg page
+2025-05-19 12:22:39,234 - WARNING - Image not found: archive\crops\467.jpg Gaunko 
+2025-05-19 12:22:39,467 - WARNING - Image not found: archive\crops\536.jpg Maya
+2025-05-19 12:22:39,559 - WARNING - Image not found: archive\crops\558.jpg 31347
+2025-05-19 12:22:39,832 - WARNING - Image not found: archive\crops\628.jpg ifonts
+2025-05-19 12:22:39,883 - WARNING - Image not found: archive\crops\647.jpg Bat 
+2025-05-19 12:22:39,889 - WARNING - Image not found: archive\crops\650.jpg -
+2025-05-19 12:22:39,919 - WARNING - Image not found: archive\crops\662.jpg CLASSMATE
+2025-05-19 12:22:39,943 - WARNING - Image not found: archive\crops\671.jpg lamichhane
+2025-05-19 12:22:40,008 - WARNING - Image not found: archive\crops\694.jpg Centre
+2025-05-19 12:22:40,011 - WARNING - Image not found: archive\crops\696.jpg nepalifonts
+2025-05-19 12:22:40,127 - WARNING - Image not found: archive\crops\737.jpg -
+2025-05-19 12:22:40,197 - WARNING - Image not found: archive\crops\762.jpg National 
+2025-05-19 12:22:40,253 - WARNING - Image not found: archive\crops\782.jpg stem
+2025-05-19 12:22:40,301 - WARNING - Image not found: archive\crops\800.jpg Engineer
+2025-05-19 12:22:40,380 - WARNING - Image not found: archive\crops\828.jpg Date:
+2025-05-19 12:22:40,566 - WARNING - Image not found: archive\crops\894.jpg PAN
+2025-05-19 12:22:40,621 - WARNING - Image not found: archive\crops\914.jpg line
+2025-05-19 12:22:40,809 - WARNING - Image not found: archive\crops\960.jpg Qty.
+2025-05-19 12:22:40,904 - WARNING - Image not found: archive\crops\997.jpg LEAD
+2025-05-19 12:22:40,925 - WARNING - Image not found: archive\crops\1006.jpg -
+2025-05-19 12:22:40,975 - WARNING - Image not found: archive\crops\1025.jpg YOU
+2025-05-19 12:22:41,075 - WARNING - Image not found: archive\crops\1062.jpg Recharge 
+2025-05-19 12:22:41,102 - WARNING - Image not found: archive\crops\1072.jpg case
+2025-05-19 12:22:41,154 - WARNING - Image not found: archive\crops\1090.jpg Rs
+2025-05-19 12:22:41,268 - WARNING - Image not found: archive\crops\1127.jpg SIM
+2025-05-19 12:22:41,283 - WARNING - Image not found: archive\crops\1133.jpg -
+2025-05-19 12:22:41,342 - WARNING - Image not found: archive\crops\1155.jpg 068\3\29
+2025-05-19 12:22:41,342 - WARNING - Image not found: archive\crops\1156.jpg -
+2025-05-19 12:22:41,393 - WARNING - Image not found: archive\crops\1175.jpg Run
+2025-05-19 12:22:41,501 - WARNING - Image not found: archive\crops\1214.jpg -
+2025-05-19 12:22:41,515 - WARNING - Image not found: archive\crops\1220.jpg taken
+2025-05-19 12:22:41,707 - WARNING - Image not found: archive\crops\1285.jpg CENTRE 
+2025-05-19 12:22:41,808 - WARNING - Image not found: archive\crops\1322.jpg Technician 
+2025-05-19 12:22:41,882 - WARNING - Image not found: archive\crops\1349.jpg For
+2025-05-19 12:22:41,960 - WARNING - Image not found: archive\crops\1371.jpg NEW LINK 
+2025-05-19 12:22:42,148 - WARNING - Image not found: archive\crops\1404.jpg -
+2025-05-19 12:22:42,181 - WARNING - Image not found: archive\crops\1413.jpg Book 
+2025-05-19 12:22:42,407 - WARNING - Image not found: archive\crops\1477.jpg Tcl
+2025-05-19 12:22:42,438 - WARNING - Image not found: archive\crops\1490.jpg -
+2025-05-19 12:22:42,500 - WARNING - Image not found: archive\crops\1514.jpg NTC
+2025-05-19 12:22:42,561 - WARNING - Image not found: archive\crops\1537.jpg 2065
+2025-05-19 12:22:42,570 - WARNING - Image not found: archive\crops\1541.jpg back
+2025-05-19 12:22:42,748 - WARNING - Image not found: archive\crops\1605.jpg BHOTAITY 
+2025-05-19 12:22:42,849 - WARNING - Image not found: archive\crops\1641.jpg -
+2025-05-19 12:22:42,868 - WARNING - Image not found: archive\crops\1648.jpg shriram
+2025-05-19 12:22:42,877 - WARNING - Image not found: archive\crops\1652.jpg dai
+2025-05-19 12:22:42,923 - WARNING - Image not found: archive\crops\1669.jpg Bill
+2025-05-19 12:22:43,094 - WARNING - Image not found: archive\crops\1729.jpg -
+2025-05-19 12:22:43,103 - WARNING - Image not found: archive\crops\1733.jpg Particulars
+2025-05-19 12:22:43,271 - WARNING - Image not found: archive\crops\1790.jpg lice
+2025-05-19 12:22:43,275 - WARNING - Image not found: archive\crops\1792.jpg -
+2025-05-19 12:22:43,288 - WARNING - Image not found: archive\crops\1797.jpg O.E.
+2025-05-19 12:22:43,338 - WARNING - Image not found: archive\crops\1812.jpg -
+2025-05-19 12:22:43,414 - WARNING - Image not found: archive\crops\1834.jpg (NTC)
+2025-05-19 12:22:43,457 - WARNING - Image not found: archive\crops\1849.jpg -
+2025-05-19 12:22:43,496 - WARNING - Image not found: archive\crops\1861.jpg No.:
+2025-05-19 12:22:43,710 - WARNING - Image not found: archive\crops\1917.jpg faceboo
+2025-05-19 12:22:43,718 - WARNING - Image not found: archive\crops\1921.jpg -
+2025-05-19 12:22:43,727 - WARNING - Image not found: archive\crops\1925.jpg 500183731
+2025-05-19 12:22:43,779 - WARNING - Image not found: archive\crops\1945.jpg Boundary
+2025-05-19 12:22:43,890 - WARNING - Image not found: archive\crops\1985.jpg Tuesday
+2025-05-19 12:22:43,897 - WARNING - Image not found: archive\crops\1988.jpg UNTI
+2025-05-19 12:22:43,897 - WARNING - Image not found: archive\crops\1989.jpg 4252900
+2025-05-19 12:22:44,090 - WARNING - Image not found: archive\crops\2053.jpg To
+2025-05-19 12:22:44,091 - WARNING - Image not found: archive\crops\2054.jpg -
+2025-05-19 12:22:44,184 - WARNING - Image not found: archive\crops\2090.jpg NCELL
+2025-05-19 12:22:44,419 - WARNING - Image not found: archive\crops\2175.jpg -
+2025-05-19 12:22:44,427 - WARNING - Image not found: archive\crops\2179.jpg TLED
+2025-05-19 12:22:44,427 - WARNING - Image not found: archive\crops\2180.jpg Ps.
+2025-05-19 12:22:44,556 - WARNING - Image not found: archive\crops\2223.jpg -
+2025-05-19 12:22:44,603 - WARNING - Image not found: archive\crops\2234.jpg -
+2025-05-19 12:22:44,612 - WARNING - Image not found: archive\crops\2237.jpg CLASSMATE
+2025-05-19 12:22:44,612 - WARNING - Image not found: archive\crops\2238.jpg -
+2025-05-19 12:22:44,625 - WARNING - Image not found: archive\crops\2242.jpg No
+2025-05-19 12:22:44,625 - WARNING - Image not found: archive\crops\2243.jpg -
+2025-05-19 12:22:44,863 - WARNING - Image not found: archive\crops\2304.jpg 4221269
+2025-05-19 12:22:44,932 - WARNING - Image not found: archive\crops\2324.jpg shine
+2025-05-19 12:22:45,017 - WARNING - Image not found: archive\crops\2353.jpg -
+2025-05-19 12:22:45,043 - WARNING - Image not found: archive\crops\2363.jpg lang
+2025-05-19 12:22:45,229 - WARNING - Image not found: archive\crops\2428.jpg Goods once
+2025-05-19 12:22:45,394 - WARNING - Image not found: archive\crops\2486.jpg -
+2025-05-19 12:22:45,400 - WARNING - Image not found: archive\crops\2489.jpg sold
+2025-05-19 12:22:45,401 - WARNING - Image not found: archive\crops\2490.jpg -
+2025-05-19 12:22:45,503 - WARNING - Image not found: archive\crops\2526.jpg DUTY
+2025-05-19 12:22:45,560 - WARNING - Image not found: archive\crops\2546.jpg were
+2025-05-19 12:22:45,681 - WARNING - Image not found: archive\crops\2590.jpg Date
+2025-05-19 12:22:45,688 - WARNING - Image not found: archive\crops\2593.jpg project
+2025-05-19 12:22:45,788 - WARNING - Image not found: archive\crops\2628.jpg -
+2025-05-19 12:22:45,854 - WARNING - Image not found: archive\crops\2653.jpg -
+2025-05-19 12:22:45,915 - WARNING - Image not found: archive\crops\2675.jpg CLASSMATE
+2025-05-19 12:22:45,933 - WARNING - Image not found: archive\crops\2682.jpg cricket
+2025-05-19 12:22:45,979 - WARNING - Image not found: archive\crops\2699.jpg PAGE
+2025-05-19 12:22:46,079 - WARNING - Image not found: archive\crops\2736.jpg Bat 
+2025-05-19 12:22:46,113 - WARNING - Image not found: archive\crops\2749.jpg -
+2025-05-19 12:22:46,125 - WARNING - Image not found: archive\crops\2754.jpg DATE
+2025-05-19 12:22:46,393 - WARNING - Image not found: archive\crops\2850.jpg CAMERA
+2025-05-19 12:22:46,522 - WARNING - Image not found: archive\crops\2895.jpg cricket
+2025-05-19 12:22:46,591 - WARNING - Image not found: archive\crops\2909.jpg -
+2025-05-19 12:22:46,773 - WARNING - Image not found: archive\crops\2978.jpg -
+2025-05-19 12:22:46,818 - WARNING - Image not found: archive\crops\2997.jpg cricket
+2025-05-19 12:22:46,881 - WARNING - Image not found: archive\crops\3025.jpg -
+2025-05-19 12:22:47,121 - WARNING - Image not found: archive\crops\3094.jpg -
+2025-05-19 12:22:47,131 - WARNING - Image not found: archive\crops\3097.jpg -
+2025-05-19 12:22:47,140 - WARNING - Image not found: archive\crops\3100.jpg -
+2025-05-19 12:22:47,205 - WARNING - Image not found: archive\crops\3116.jpg further
+2025-05-19 12:22:47,206 - WARNING - Image not found: archive\crops\3117.jpg -
+2025-05-19 12:22:47,317 - WARNING - Image not found: archive\crops\3147.jpg DATE
+2025-05-19 12:22:47,336 - WARNING - Image not found: archive\crops\3153.jpg -
+2025-05-19 12:22:47,363 - WARNING - Image not found: archive\crops\3161.jpg at
+2025-05-19 12:22:47,433 - WARNING - Image not found: archive\crops\3181.jpg stone
+2025-05-19 12:22:47,442 - WARNING - Image not found: archive\crops\3185.jpg -
+2025-05-19 12:22:47,671 - WARNING - Image not found: archive\crops\3268.jpg  Bal 
+2025-05-19 12:22:47,886 - WARNING - Image not found: archive\crops\3345.jpg Decision
+2025-05-19 12:22:47,985 - WARNING - Image not found: archive\crops\3381.jpg umpire
+2025-05-19 12:22:48,082 - WARNING - Image not found: archive\crops\3417.jpg Third
+2025-05-19 12:22:48,092 - WARNING - Image not found: archive\crops\3421.jpg -
+2025-05-19 12:22:48,183 - WARNING - Image not found: archive\crops\3453.jpg -
+2025-05-19 12:22:48,272 - WARNING - Image not found: archive\crops\3483.jpg call
+2025-05-19 12:22:48,389 - WARNING - Image not found: archive\crops\3523.jpg -
+2025-05-19 12:22:48,463 - WARNING - Image not found: archive\crops\3549.jpg -
+2025-05-19 12:22:48,490 - WARNING - Image not found: archive\crops\3557.jpg -
+2025-05-19 12:22:48,558 - WARNING - Image not found: archive\crops\3583.jpg -
+2025-05-19 12:22:48,566 - WARNING - Image not found: archive\crops\3587.jpg -
+2025-05-19 12:22:48,851 - WARNING - Image not found: archive\crops\3695.jpg available
+2025-05-19 12:22:49,053 - WARNING - Image not found: archive\crops\3765.jpg youtube
+2025-05-19 12:22:49,165 - WARNING - Image not found: archive\crops\3805.jpg -
+2025-05-19 12:22:49,378 - WARNING - Image not found: archive\crops\3869.jpg -
+2025-05-19 12:22:49,542 - WARNING - Image not found: archive\crops\3928.jpg Date:
+2025-05-19 12:22:49,617 - WARNING - Image not found: archive\crops\3950.jpg Best
+2025-05-19 12:22:49,965 - WARNING - Image not found: archive\crops\4052.jpg -
+2025-05-19 12:22:49,979 - WARNING - Image not found: archive\crops\4058.jpg -
+2025-05-19 12:22:50,010 - WARNING - Image not found: archive\crops\4070.jpg -
+2025-05-19 12:22:50,013 - WARNING - Image not found: archive\crops\4072.jpg wishes
+2025-05-19 12:22:50,077 - WARNING - Image not found: archive\crops\4096.jpg -
+2025-05-19 12:22:50,149 - WARNING - Image not found: archive\crops\4122.jpg the 
+2025-05-19 12:22:50,289 - WARNING - Image not found: archive\crops\4172.jpg upcommity
+2025-05-19 12:22:50,358 - WARNING - Image not found: archive\crops\4198.jpg for
+2025-05-19 12:22:50,607 - WARNING - Image not found: archive\crops\4289.jpg link
+2025-05-19 12:22:50,629 - WARNING - Image not found: archive\crops\4297.jpg click
+2025-05-19 12:22:56,099 - INFO - Initialized trainer with 0 training samples
+2025-05-19 12:22:56,100 - INFO - Starting training for 10 epochs
+2025-05-19 12:22:56,120 - INFO - Epoch 1/10
+2025-05-19 12:22:56,126 - INFO - Epoch 1 - Accuracy: 0.00%
+2025-05-19 12:25:50,760 - INFO - Successfully loaded labels using utf-16 encoding
+2025-05-19 12:25:50,761 - INFO - Loaded 4358 labels from archive\labels.csv
