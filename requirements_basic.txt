@@ -8,11 +8,6 @@ opencv-python-headless==4.9.0.80
 pytesseract==0.3.10
 reportlab==4.0.4
 
-# ML dependencies (conservative versions)
-ultralytics==8.1.0
-torch==2.2.0
-torchvision==0.17.0
-
 # Production server
 gunicorn==21.2.0
 
