@@ -16684,3 +16684,340 @@ py', reloading
 2025-06-19 05:58:22,805 - INFO - Line 11: (248, 488), (375, 483), (453, 483)
 2025-06-19 05:58:22,806 - INFO - Detected and sorted 69 text regions
 2025-06-19 05:58:46,180 - INFO - 127.0.0.1 - - [19/Jun/2025 05:58:46] "POST /ocr HTTP/1.1" 200 -
+2025-06-20 11:12:24,965 - WARNING - Could not delete file debug_output\preprocessed - it may be in use
+2025-06-20 11:12:24,966 - WARNING - Could not delete file debug_output\regions - it may be in use
+2025-06-20 11:12:24,967 - WARNING - Could not delete file debug_output\visualizations - it may be in use
+2025-06-20 11:12:24,967 - WARNING - Error removing directory debug_output: [WinError 145] The directory is not empty: 'debug_output'
+2025-06-20 11:12:25,046 - ERROR - Failed to load YOLO model: invalid load key, 'v'.
+2025-06-20 11:12:25,376 - ERROR - Failed to initialize PyTorch model: invalid load key, 'v'.
+2025-06-20 11:12:25,377 - INFO - OCR pipeline initialized
+2025-06-20 11:12:25,380 - WARNING - Finetuned char-level model not found at out\nep_char.traineddata
+2025-06-20 11:12:25,381 - WARNING - Finetuned word-level model not found at out\nep_word.traineddata
+2025-06-20 11:12:25,438 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-20 11:12:25,439 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-20 11:12:25,468 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-20 11:12:33,668 - WARNING - Could not delete file debug_output\preprocessed - it may be in use
+2025-06-20 11:12:33,669 - WARNING - Could not delete file debug_output\regions - it may be in use
+2025-06-20 11:12:33,669 - WARNING - Could not delete file debug_output\visualizations - it may be in use
+2025-06-20 11:12:33,670 - WARNING - Error removing directory debug_output: [WinError 145] The directory is not empty: 'debug_output'
+2025-06-20 11:12:33,675 - ERROR - Failed to load YOLO model: invalid load key, 'v'.
+2025-06-20 11:12:33,895 - ERROR - Failed to initialize PyTorch model: invalid load key, 'v'.
+2025-06-20 11:12:33,896 - INFO - OCR pipeline initialized
+2025-06-20 11:12:33,896 - WARNING - Finetuned char-level model not found at out\nep_char.traineddata
+2025-06-20 11:12:33,896 - WARNING - Finetuned word-level model not found at out\nep_word.traineddata
+2025-06-20 11:12:33,922 - WARNING -  * Debugger is active!
+2025-06-20 11:12:33,947 - INFO -  * Debugger PIN: 927-665-954
+2025-06-20 11:12:44,336 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-06-20 11:12:44,337 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-06-20 11:12:44,337 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-06-20 11:12:44,347 - INFO - 127.0.0.1 - - [20/Jun/2025 11:12:44] "GET / HTTP/1.1" 200 -
+2025-06-20 11:12:44,678 - INFO - 127.0.0.1 - - [20/Jun/2025 11:12:44] "[36mGET /pdf/InkVision_Businessplan.pdf HTTP/1.1[0m" 304 -
+2025-06-20 11:12:49,701 - INFO - 127.0.0.1 - - [20/Jun/2025 11:12:49] "GET /pdf/InkVision_Businessplan.pdf HTTP/1.1" 200 -
+2025-06-20 11:12:50,104 - INFO - 127.0.0.1 - - [20/Jun/2025 11:12:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-20 11:12:54,151 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-06-20 11:12:54,152 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-06-20 11:12:54,153 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-06-20 11:12:54,165 - INFO - 127.0.0.1 - - [20/Jun/2025 11:12:54] "GET /ocr HTTP/1.1" 200 -
+2025-06-20 11:13:36,124 - INFO - Detected and sorted 0 text regions
+2025-06-20 11:13:47,352 - INFO - 127.0.0.1 - - [20/Jun/2025 11:13:47] "POST /ocr HTTP/1.1" 200 -
+2025-06-20 11:13:55,453 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-06-20 11:13:55,454 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-06-20 11:13:55,454 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-06-20 11:13:55,455 - INFO - 127.0.0.1 - - [20/Jun/2025 11:13:55] "GET /ocr HTTP/1.1" 200 -
+2025-06-20 11:14:05,502 - INFO - Detected and sorted 0 text regions
+2025-06-20 11:14:10,671 - INFO - 127.0.0.1 - - [20/Jun/2025 11:14:10] "POST /ocr HTTP/1.1" 200 -
+2025-06-20 11:14:38,394 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-06-20 11:14:38,395 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-06-20 11:14:38,395 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-06-20 11:14:38,398 - INFO - 127.0.0.1 - - [20/Jun/2025 11:14:38] "GET /ocr HTTP/1.1" 200 -
+2025-06-20 11:14:46,055 - INFO - Detected and sorted 0 text regions
+2025-06-20 11:14:51,353 - INFO - 127.0.0.1 - - [20/Jun/2025 11:14:51] "POST /ocr HTTP/1.1" 200 -
+2025-06-20 11:15:35,487 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\train_yolo.py', reloading
+2025-06-20 11:15:35,489 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\test_image.py', reloading
+2025-06-20 11:15:35,491 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\tesseract_finetune.py', reloading
+2025-06-20 11:15:35,496 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\script_classifier.py', reloading
+2025-06-20 11:15:35,813 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\dataset_converter.py', reloading
+2025-06-20 11:15:35,815 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\dataset_validator.py', reloading
+2025-06-20 11:15:37,707 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-20 11:15:49,452 - WARNING - Could not delete file debug_output\preprocessed - it may be in use
+2025-06-20 11:15:49,453 - WARNING - Could not delete file debug_output\regions - it may be in use
+2025-06-20 11:15:49,454 - WARNING - Could not delete file debug_output\visualizations - it may be in use
+2025-06-20 11:15:49,454 - WARNING - Error removing directory debug_output: [WinError 145] The directory is not empty: 'debug_output'
+2025-06-20 11:15:49,462 - ERROR - Failed to load YOLO model: invalid load key, 'v'.
+2025-06-20 11:15:49,690 - ERROR - Failed to initialize PyTorch model: invalid load key, 'v'.
+2025-06-20 11:15:49,691 - INFO - OCR pipeline initialized
+2025-06-20 11:15:49,692 - WARNING - Finetuned char-level model not found at out\nep_char.traineddata
+2025-06-20 11:15:49,692 - WARNING - Finetuned word-level model not found at out\nep_word.traineddata
+2025-06-20 11:15:49,722 - WARNING -  * Debugger is active!
+2025-06-20 11:15:49,728 - INFO -  * Debugger PIN: 927-665-954
+2025-06-20 11:16:03,482 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torch\\nn\\__init__.py', reloading
+2025-06-20 11:16:03,505 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torch\\nn\\modules\\__init__.py', reloading
+2025-06-20 11:16:03,530 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\__init__.py', reloading
+2025-06-20 11:16:03,553 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\__init__.py', reloading
+2025-06-20 11:16:03,578 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\alexnet.py', reloading
+2025-06-20 11:16:03,605 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\convnext.py', reloading
+2025-06-20 11:16:03,643 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\efficientnet.py', reloading
+2025-06-20 11:16:03,682 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\googlenet.py', reloading
+2025-06-20 11:16:03,708 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\inception.py', reloading
+2025-06-20 11:16:03,738 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\mnasnet.py', reloading
+2025-06-20 11:16:03,757 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\mobilenet.py', reloading
+2025-06-20 11:16:03,775 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\mobilenetv2.py', reloading
+2025-06-20 11:16:03,800 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\mobilenetv3.py', reloading
+2025-06-20 11:16:03,833 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\regnet.py', reloading
+2025-06-20 11:16:03,871 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\resnet.py', reloading
+2025-06-20 11:16:03,902 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\shufflenetv2.py', reloading
+2025-06-20 11:16:03,930 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\squeezenet.py', reloading
+2025-06-20 11:16:03,957 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\vgg.py', reloading
+2025-06-20 11:16:03,980 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\vision_transformer.py', reloading
+2025-06-20 11:16:04,017 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\swin_transformer.py', reloading
+2025-06-20 11:16:04,052 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\maxvit.py', reloading
+2025-06-20 11:16:04,077 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\ultralytics\\__init__.py', reloading
+2025-06-20 11:16:05,419 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-20 11:16:14,595 - WARNING - Could not delete file debug_output\preprocessed - it may be in use
+2025-06-20 11:16:14,596 - WARNING - Could not delete file debug_output\regions - it may be in use
+2025-06-20 11:16:14,596 - WARNING - Could not delete file debug_output\visualizations - it may be in use
+2025-06-20 11:16:14,597 - WARNING - Error removing directory debug_output: [WinError 145] The directory is not empty: 'debug_output'
+2025-06-20 11:16:14,603 - ERROR - Failed to load YOLO model: invalid load key, 'v'.
+2025-06-20 11:16:14,812 - ERROR - Failed to initialize PyTorch model: invalid load key, 'v'.
+2025-06-20 11:16:14,813 - INFO - OCR pipeline initialized
+2025-06-20 11:16:14,815 - WARNING - Finetuned char-level model not found at out\nep_char.traineddata
+2025-06-20 11:16:14,815 - WARNING - Finetuned word-level model not found at out\nep_word.traineddata
+2025-06-20 11:16:14,836 - WARNING -  * Debugger is active!
+2025-06-20 11:16:14,842 - INFO -  * Debugger PIN: 927-665-954
+2025-06-20 11:17:29,683 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-06-20 11:17:29,685 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-06-20 11:17:29,685 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-06-20 11:17:29,695 - INFO - 127.0.0.1 - - [20/Jun/2025 11:17:29] "GET /ocr HTTP/1.1" 200 -
+2025-06-20 11:17:38,374 - INFO - Detected and sorted 0 text regions
+2025-06-20 11:17:43,676 - INFO - 127.0.0.1 - - [20/Jun/2025 11:17:43] "POST /ocr HTTP/1.1" 200 -
+2025-06-20 11:19:02,859 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\tesseract_ocr_pipeline.py', reloading
+2025-06-20 11:19:02,863 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\tesseract_ocr_pipeline.py', reloading
+2025-06-20 11:19:04,193 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-20 11:19:13,659 - WARNING - Could not delete file debug_output\preprocessed - it may be in use
+2025-06-20 11:19:13,659 - WARNING - Could not delete file debug_output\regions - it may be in use
+2025-06-20 11:19:13,661 - WARNING - Could not delete file debug_output\visualizations - it may be in use
+2025-06-20 11:19:13,661 - WARNING - Error removing directory debug_output: [WinError 145] The directory is not empty: 'debug_output'
+2025-06-20 11:19:13,667 - ERROR - Failed to load YOLO model: invalid load key, 'v'.
+2025-06-20 11:19:13,927 - ERROR - Failed to initialize PyTorch model: invalid load key, 'v'.
+2025-06-20 11:19:13,928 - INFO - OCR pipeline initialized
+2025-06-20 11:19:13,929 - WARNING - Finetuned char-level model not found at out\nep_char.traineddata
+2025-06-20 11:19:13,929 - WARNING - Finetuned word-level model not found at out\nep_word.traineddata
+2025-06-20 11:19:13,956 - WARNING -  * Debugger is active!
+2025-06-20 11:19:13,963 - INFO -  * Debugger PIN: 927-665-954
+2025-06-20 11:19:14,202 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-06-20 11:19:14,203 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-06-20 11:19:14,203 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-06-20 11:19:14,214 - INFO - 127.0.0.1 - - [20/Jun/2025 11:19:14] "GET /ocr HTTP/1.1" 200 -
+2025-06-20 11:19:20,968 - INFO - Saved line-removed image to debug_output\line_removed_FB_IMG_15841195491482096.jpg
+2025-06-20 11:19:20,970 - INFO - Detected and sorted 0 text regions
+2025-06-20 11:19:21,004 - INFO - Saved region visualization to debug_output\visualizations\regions_FB_IMG_15841195491482096.jpg
+2025-06-20 11:19:25,966 - INFO - 127.0.0.1 - - [20/Jun/2025 11:19:25] "POST /ocr HTTP/1.1" 200 -
+2025-06-20 11:20:33,231 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\tesseract_ocr_pipeline.py', reloading
+2025-06-20 11:20:33,232 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\tesseract_ocr_pipeline.py', reloading
+2025-06-20 11:20:35,540 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-20 11:20:44,499 - WARNING - Could not delete file debug_output\preprocessed - it may be in use
+2025-06-20 11:20:44,500 - WARNING - Could not delete file debug_output\regions - it may be in use
+2025-06-20 11:20:44,500 - WARNING - Could not delete file debug_output\visualizations - it may be in use
+2025-06-20 11:20:44,501 - WARNING - Error removing directory debug_output: [WinError 145] The directory is not empty: 'debug_output'
+2025-06-20 11:20:44,506 - ERROR - Failed to load YOLO model: invalid load key, 'v'.
+2025-06-20 11:20:44,703 - ERROR - Failed to initialize PyTorch model: invalid load key, 'v'.
+2025-06-20 11:20:44,704 - INFO - OCR pipeline initialized
+2025-06-20 11:20:44,705 - WARNING - Finetuned char-level model not found at out\nep_char.traineddata
+2025-06-20 11:20:44,705 - WARNING - Finetuned word-level model not found at out\nep_word.traineddata
+2025-06-20 11:20:44,729 - WARNING -  * Debugger is active!
+2025-06-20 11:20:44,736 - INFO -  * Debugger PIN: 927-665-954
+2025-06-20 11:21:06,908 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-06-20 11:21:06,909 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-06-20 11:21:06,910 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-06-20 11:21:06,917 - INFO - 127.0.0.1 - - [20/Jun/2025 11:21:06] "GET /ocr HTTP/1.1" 200 -
+2025-06-20 11:21:25,001 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-06-20 11:21:25,002 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-06-20 11:21:25,003 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-06-20 11:21:25,004 - INFO - 127.0.0.1 - - [20/Jun/2025 11:21:25] "GET /ocr HTTP/1.1" 200 -
+2025-06-20 11:21:31,319 - INFO - Saved line-removed image to debug_output\line_removed_FB_IMG_15841195491482096.jpg
+2025-06-20 11:21:31,320 - INFO - Detected and sorted 0 text regions
+2025-06-20 11:21:31,338 - INFO - Saved region visualization to debug_output\visualizations\regions_FB_IMG_15841195491482096.jpg
+2025-06-20 11:21:36,333 - INFO - 127.0.0.1 - - [20/Jun/2025 11:21:36] "POST /ocr HTTP/1.1" 200 -
+2025-06-20 12:26:09,394 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\tesseract_ocr_pipeline.py', reloading
+2025-06-20 12:26:12,733 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-20 12:26:33,195 - WARNING - Could not delete file debug_output\preprocessed - it may be in use
+2025-06-20 12:26:33,195 - WARNING - Could not delete file debug_output\regions - it may be in use
+2025-06-20 12:26:33,196 - WARNING - Could not delete file debug_output\visualizations - it may be in use
+2025-06-20 12:26:33,197 - WARNING - Error removing directory debug_output: [WinError 145] The directory is not empty: 'debug_output'
+2025-06-20 12:26:33,236 - ERROR - Failed to load YOLO model: invalid load key, 'v'.
+2025-06-20 12:26:34,663 - ERROR - Failed to initialize PyTorch model: invalid load key, 'v'.
+2025-06-20 12:26:34,664 - INFO - OCR pipeline initialized
+2025-06-20 12:26:34,666 - WARNING - Finetuned char-level model not found at out\nep_char.traineddata
+2025-06-20 12:26:34,666 - WARNING - Finetuned word-level model not found at out\nep_word.traineddata
+2025-06-20 12:26:34,707 - WARNING -  * Debugger is active!
+2025-06-20 12:26:34,717 - INFO -  * Debugger PIN: 927-665-954
+2025-06-20 12:31:29,328 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\train_yolo.py', reloading
+2025-06-20 12:31:29,359 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\test_image.py', reloading
+2025-06-20 12:31:29,383 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\tesseract_finetune.py', reloading
+2025-06-20 12:31:29,595 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\dataset_validator.py', reloading
+2025-06-20 12:31:29,596 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\script_classifier.py', reloading
+2025-06-20 12:31:29,609 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\dataset_converter.py', reloading
+2025-06-20 12:31:31,162 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-20 12:31:41,616 - WARNING - Could not delete file debug_output\preprocessed - it may be in use
+2025-06-20 12:31:41,617 - WARNING - Could not delete file debug_output\regions - it may be in use
+2025-06-20 12:31:41,617 - WARNING - Could not delete file debug_output\visualizations - it may be in use
+2025-06-20 12:31:41,618 - WARNING - Error removing directory debug_output: [WinError 145] The directory is not empty: 'debug_output'
+2025-06-20 12:31:41,625 - ERROR - Failed to load YOLO model: invalid load key, 'v'.
+2025-06-20 12:31:41,865 - ERROR - Failed to initialize PyTorch model: invalid load key, 'v'.
+2025-06-20 12:31:41,866 - INFO - OCR pipeline initialized
+2025-06-20 12:31:41,867 - WARNING - Finetuned char-level model not found at out\nep_char.traineddata
+2025-06-20 12:31:41,867 - WARNING - Finetuned word-level model not found at out\nep_word.traineddata
+2025-06-20 12:31:41,898 - WARNING -  * Debugger is active!
+2025-06-20 12:31:41,906 - INFO -  * Debugger PIN: 927-665-954
+2025-06-20 13:35:39,787 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-06-20 13:35:39,789 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-06-20 13:35:39,790 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-06-20 13:35:39,800 - INFO - 127.0.0.1 - - [20/Jun/2025 13:35:39] "GET / HTTP/1.1" 200 -
+2025-06-20 13:35:40,123 - INFO - 127.0.0.1 - - [20/Jun/2025 13:35:40] "[36mGET /pdf/InkVision_Businessplan.pdf HTTP/1.1[0m" 304 -
+2025-06-20 15:22:53,163 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-06-20 15:22:53,171 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-06-20 15:22:53,178 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-06-20 15:22:53,181 - INFO - 127.0.0.1 - - [20/Jun/2025 15:22:53] "GET / HTTP/1.1" 200 -
+2025-06-20 15:22:53,416 - INFO - 127.0.0.1 - - [20/Jun/2025 15:22:53] "[36mGET /pdf/InkVision_Businessplan.pdf HTTP/1.1[0m" 304 -
+2025-06-20 15:39:12,322 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-06-20 15:39:12,323 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-06-20 15:39:12,324 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-06-20 15:39:12,424 - INFO - 127.0.0.1 - - [20/Jun/2025 15:39:12] "GET /ocr HTTP/1.1" 200 -
+2025-06-20 15:39:33,548 - INFO - Saved line-removed image to debug_output\line_removed_88.jpg
+2025-06-20 15:39:33,551 - INFO - Detected and sorted 0 text regions
+2025-06-20 15:39:33,565 - INFO - Saved region visualization to debug_output\visualizations\regions_88.jpg
+2025-06-20 15:39:33,565 - WARNING - YOLO did not detect any text regions. Falling back to full page OCR.
+2025-06-20 15:39:33,578 - INFO - Saved full preprocessed image to debug_output\preprocessed\full_preprocessed_88.jpg
+2025-06-20 15:39:49,034 - INFO - 127.0.0.1 - - [20/Jun/2025 15:39:49] "POST /ocr HTTP/1.1" 200 -
+2025-06-20 15:41:15,815 - INFO - Saved line-removed image to debug_output\line_removed_88.jpg
+2025-06-20 15:41:15,817 - INFO - Detected and sorted 0 text regions
+2025-06-20 15:41:15,828 - INFO - Saved region visualization to debug_output\visualizations\regions_88.jpg
+2025-06-20 15:41:15,829 - WARNING - YOLO did not detect any text regions. Falling back to full page OCR.
+2025-06-20 15:41:15,838 - INFO - Saved full preprocessed image to debug_output\preprocessed\full_preprocessed_88.jpg
+2025-06-20 15:41:23,759 - INFO - 127.0.0.1 - - [20/Jun/2025 15:41:23] "POST /generate-pdf HTTP/1.1" 200 -
+2025-06-21 16:45:59,918 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\script_classifier.py', reloading
+2025-06-21 16:45:59,927 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\test_image.py', reloading
+2025-06-21 16:45:59,931 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\dataset_converter.py', reloading
+2025-06-21 16:45:59,932 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\train_yolo.py', reloading
+2025-06-21 16:45:59,933 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\tesseract_finetune.py', reloading
+2025-06-21 16:45:59,936 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\app.py', reloading
+2025-06-21 16:45:59,938 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\tesseract_ocr_pipeline.py', reloading
+2025-06-21 16:45:59,940 - INFO -  * Detected change in 'C:\\Users\\lenevo\\Downloads\\Easy_OCR_Test\\dataset_validator.py', reloading
+2025-06-21 16:46:04,255 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-21 16:46:18,914 - WARNING - Could not delete file debug_output\preprocessed - it may be in use
+2025-06-21 16:46:18,914 - WARNING - Could not delete file debug_output\regions - it may be in use
+2025-06-21 16:46:18,915 - WARNING - Could not delete file debug_output\visualizations - it may be in use
+2025-06-21 16:46:18,916 - WARNING - Error removing directory debug_output: [WinError 145] The directory is not empty: 'debug_output'
+2025-06-21 16:46:18,920 - ERROR - Failed to load YOLO model: invalid load key, 'v'.
+2025-06-21 16:46:19,140 - ERROR - Failed to initialize PyTorch model: invalid load key, 'v'.
+2025-06-21 16:46:19,141 - INFO - OCR pipeline initialized
+2025-06-21 16:46:19,142 - WARNING - Finetuned char-level model not found at out\nep_char.traineddata
+2025-06-21 16:46:19,142 - WARNING - Finetuned word-level model not found at out\nep_word.traineddata
+2025-06-21 16:46:19,165 - WARNING -  * Debugger is active!
+2025-06-21 16:46:19,170 - INFO -  * Debugger PIN: 927-665-954
+2025-06-21 16:46:34,670 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-06-21 16:46:34,670 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-06-21 16:46:34,671 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-06-21 16:46:34,678 - INFO - 127.0.0.1 - - [21/Jun/2025 16:46:34] "GET /ocr HTTP/1.1" 200 -
+2025-07-02 15:36:41,233 - WARNING - Could not delete file debug_output\preprocessed - it may be in use
+2025-07-02 15:36:41,235 - WARNING - Could not delete file debug_output\regions - it may be in use
+2025-07-02 15:36:41,235 - WARNING - Could not delete file debug_output\visualizations - it may be in use
+2025-07-02 15:36:41,236 - WARNING - Error removing directory debug_output: [WinError 145] The directory is not empty: 'debug_output'
+2025-07-02 15:36:41,268 - ERROR - Failed to load YOLO model: invalid load key, 'v'.
+2025-07-02 15:36:41,595 - ERROR - Failed to initialize PyTorch model: invalid load key, 'v'.
+2025-07-02 15:36:41,596 - INFO - OCR pipeline initialized
+2025-07-02 15:36:41,597 - WARNING - Finetuned char-level model not found at out\nep_char.traineddata
+2025-07-02 15:36:41,597 - WARNING - Finetuned word-level model not found at out\nep_word.traineddata
+2025-07-02 15:36:41,640 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-02 15:36:41,640 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-02 15:36:41,666 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-02 15:37:11,898 - WARNING - Could not delete file debug_output\preprocessed - it may be in use
+2025-07-02 15:37:11,899 - WARNING - Could not delete file debug_output\regions - it may be in use
+2025-07-02 15:37:11,899 - WARNING - Could not delete file debug_output\visualizations - it may be in use
+2025-07-02 15:37:11,899 - WARNING - Error removing directory debug_output: [WinError 145] The directory is not empty: 'debug_output'
+2025-07-02 15:37:11,905 - ERROR - Failed to load YOLO model: invalid load key, 'v'.
+2025-07-02 15:37:12,149 - ERROR - Failed to initialize PyTorch model: invalid load key, 'v'.
+2025-07-02 15:37:12,150 - INFO - OCR pipeline initialized
+2025-07-02 15:37:12,151 - WARNING - Finetuned char-level model not found at out\nep_char.traineddata
+2025-07-02 15:37:12,151 - WARNING - Finetuned word-level model not found at out\nep_word.traineddata
+2025-07-02 15:37:12,189 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-02 15:37:12,189 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-02 15:37:12,207 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-02 15:37:21,919 - WARNING - Could not delete file debug_output\preprocessed - it may be in use
+2025-07-02 15:37:21,920 - WARNING - Could not delete file debug_output\regions - it may be in use
+2025-07-02 15:37:21,920 - WARNING - Could not delete file debug_output\visualizations - it may be in use
+2025-07-02 15:37:21,921 - WARNING - Error removing directory debug_output: [WinError 145] The directory is not empty: 'debug_output'
+2025-07-02 15:37:21,927 - ERROR - Failed to load YOLO model: invalid load key, 'v'.
+2025-07-02 15:37:22,214 - ERROR - Failed to initialize PyTorch model: invalid load key, 'v'.
+2025-07-02 15:37:22,215 - INFO - OCR pipeline initialized
+2025-07-02 15:37:22,215 - WARNING - Finetuned char-level model not found at out\nep_char.traineddata
+2025-07-02 15:37:22,216 - WARNING - Finetuned word-level model not found at out\nep_word.traineddata
+2025-07-02 15:37:22,245 - WARNING -  * Debugger is active!
+2025-07-02 15:37:22,254 - INFO -  * Debugger PIN: 927-665-954
+2025-07-02 15:37:22,582 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-07-02 15:37:22,585 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-07-02 15:37:22,587 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-07-02 15:37:22,602 - INFO - 127.0.0.1 - - [02/Jul/2025 15:37:22] "GET / HTTP/1.1" 200 -
+2025-07-02 15:37:23,008 - INFO - 127.0.0.1 - - [02/Jul/2025 15:37:23] "GET /pdf/InkVision_Businessplan.pdf HTTP/1.1" 200 -
+2025-07-02 15:37:33,831 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-07-02 15:37:33,832 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-07-02 15:37:33,833 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-07-02 15:37:33,843 - INFO - 127.0.0.1 - - [02/Jul/2025 15:37:33] "GET /ocr HTTP/1.1" 200 -
+2025-07-02 15:37:35,817 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-07-02 15:37:35,817 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-07-02 15:37:35,818 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-07-02 15:37:35,819 - INFO - 127.0.0.1 - - [02/Jul/2025 15:37:35] "GET / HTTP/1.1" 200 -
+2025-07-02 15:37:35,907 - INFO - 127.0.0.1 - - [02/Jul/2025 15:37:35] "[36mGET /pdf/InkVision_Businessplan.pdf HTTP/1.1[0m" 304 -
+2025-07-02 15:37:39,254 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-07-02 15:37:39,255 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-07-02 15:37:39,256 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-07-02 15:37:39,257 - INFO - 127.0.0.1 - - [02/Jul/2025 15:37:39] "GET /ocr HTTP/1.1" 200 -
+2025-07-02 15:38:03,195 - INFO - Saved line-removed image to debug_output\line_removed_88.jpg
+2025-07-02 15:38:03,198 - INFO - Detected and sorted 0 text regions
+2025-07-02 15:38:03,215 - INFO - Saved region visualization to debug_output\visualizations\regions_88.jpg
+2025-07-02 15:38:03,216 - WARNING - YOLO did not detect any text regions. Falling back to full page OCR.
+2025-07-02 15:38:03,231 - INFO - Saved full preprocessed image to debug_output\preprocessed\full_preprocessed_88.jpg
+2025-07-02 15:38:36,790 - INFO - 127.0.0.1 - - [02/Jul/2025 15:38:36] "POST /ocr HTTP/1.1" 200 -
+2025-07-02 15:39:49,156 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torch\\nn\\__init__.py', reloading
+2025-07-02 15:39:49,186 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torch\\nn\\modules\\__init__.py', reloading
+2025-07-02 15:39:49,212 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\__init__.py', reloading
+2025-07-02 15:39:49,238 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\alexnet.py', reloading
+2025-07-02 15:39:49,267 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\torchvision\\models\\convnext.py', reloading
+2025-07-02 15:39:50,708 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-02 15:40:03,584 - WARNING - Could not delete file debug_output\preprocessed - it may be in use
+2025-07-02 15:40:03,585 - WARNING - Could not delete file debug_output\regions - it may be in use
+2025-07-02 15:40:03,586 - WARNING - Could not delete file debug_output\visualizations - it may be in use
+2025-07-02 15:40:03,586 - WARNING - Error removing directory debug_output: [WinError 145] The directory is not empty: 'debug_output'
+2025-07-02 15:40:03,592 - ERROR - Failed to load YOLO model: invalid load key, 'v'.
+2025-07-02 15:40:03,891 - ERROR - Failed to initialize PyTorch model: invalid load key, 'v'.
+2025-07-02 15:40:03,892 - INFO - OCR pipeline initialized
+2025-07-02 15:40:03,893 - WARNING - Finetuned char-level model not found at out\nep_char.traineddata
+2025-07-02 15:40:03,893 - WARNING - Finetuned word-level model not found at out\nep_word.traineddata
+2025-07-02 15:40:03,926 - WARNING -  * Debugger is active!
+2025-07-02 15:40:03,936 - INFO -  * Debugger PIN: 927-665-954
+2025-07-02 15:40:04,236 - ERROR - Error deleting file debug_output\preprocessed: [WinError 5] Access is denied: 'debug_output\\preprocessed'
+2025-07-02 15:40:04,237 - ERROR - Error deleting file debug_output\regions: [WinError 5] Access is denied: 'debug_output\\regions'
+2025-07-02 15:40:04,237 - ERROR - Error deleting file debug_output\visualizations: [WinError 5] Access is denied: 'debug_output\\visualizations'
+2025-07-02 15:40:04,259 - INFO - 127.0.0.1 - - [02/Jul/2025 15:40:04] "GET /ocr HTTP/1.1" 200 -
+2025-07-02 15:40:11,977 - INFO - Saved line-removed image to debug_output\line_removed_88.jpg
+2025-07-02 15:40:11,978 - INFO - Detected and sorted 0 text regions
+2025-07-02 15:40:11,993 - INFO - Saved region visualization to debug_output\visualizations\regions_88.jpg
+2025-07-02 15:40:11,993 - WARNING - YOLO did not detect any text regions. Falling back to full page OCR.
+2025-07-02 15:40:12,004 - INFO - Saved full preprocessed image to debug_output\preprocessed\full_preprocessed_88.jpg
+2025-07-02 15:40:19,840 - INFO - 127.0.0.1 - - [02/Jul/2025 15:40:19] "POST /ocr HTTP/1.1" 200 -
+2025-07-02 15:40:33,694 - INFO -  * Detected change in 'C:\\Users\\lenevo\\AppData\\Roaming\\Python\\Python312\\site-packages\\numpy\\__init__.py', reloading
+2025-07-02 15:40:34,922 - INFO -  * Restarting with watchdog (windowsapi)
+2025-07-02 15:40:45,204 - WARNING - Could not delete file debug_output\preprocessed - it may be in use
+2025-07-02 15:40:45,205 - WARNING - Could not delete file debug_output\regions - it may be in use
+2025-07-02 15:40:45,205 - WARNING - Could not delete file debug_output\visualizations - it may be in use
+2025-07-02 15:40:45,206 - WARNING - Error removing directory debug_output: [WinError 145] The directory is not empty: 'debug_output'
+2025-07-02 15:40:45,212 - ERROR - Failed to load YOLO model: invalid load key, 'v'.
+2025-07-02 15:40:45,425 - ERROR - Failed to initialize PyTorch model: invalid load key, 'v'.
+2025-07-02 15:40:45,425 - INFO - OCR pipeline initialized
+2025-07-02 15:40:45,426 - WARNING - Finetuned char-level model not found at out\nep_char.traineddata
+2025-07-02 15:40:45,427 - WARNING - Finetuned word-level model not found at out\nep_word.traineddata
+2025-07-02 15:40:45,455 - WARNING -  * Debugger is active!
+2025-07-02 15:40:45,462 - INFO -  * Debugger PIN: 927-665-954

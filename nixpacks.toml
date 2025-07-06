@@ -1,0 +1,10 @@
+[phases.setup]
+nixPkgs = ["tesseract", "tesseract-data-eng", "tesseract-data-hin"]
+
+[phases.install]
+cmds = [
+  "pip install -r requirements.txt"
+]
+
+[start]
+cmd = "python app.py" 

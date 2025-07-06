@@ -138,7 +138,7 @@ class NepaliTesseractOCR:
         if language == 'nep':
             # Convert to grayscale
             gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) if len(image.shape) == 3 else image.copy()
-            # Convert to binary (INVERSE)
+            # Convert to binary
             _, binary = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
             # Apply Gaussian blur
             blurred = cv2.GaussianBlur(binary, (3, 3), 0)
@@ -425,6 +425,14 @@ Refined text:"""
             if image is None:
                 raise ValueError("Could not read image")
             
+            # Remove lines from the image for better detection
+            image_for_detection = self.remove_lines(image)
+            
+            # Save the line-removed image for debugging
+            detection_image_path = str(self.debug_dir / f"line_removed_{Path(image_path).stem}.jpg")
+            cv2.imwrite(detection_image_path, image_for_detection)
+            logging.info(f"Saved line-removed image to {detection_image_path}")
+
             # Convert to RGB for visualization
             rgb_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
             
@@ -441,8 +449,36 @@ Refined text:"""
                     'regions': 1  # Single region for English
                 }
             # For Nepali, use the existing pipeline with YOLO and region detection
-            regions = self.detect_text_regions(image)
+            regions = self.detect_text_regions(image_for_detection)
             logging.info(f"Detected and sorted {len(regions)} text regions")
+            
+            # Visualize regions and save for debugging
+            vis_image_regions = self.visualize_regions(image, regions)
+            vis_path = str(self.visualizations_dir / f"regions_{Path(image_path).stem}.jpg")
+            cv2.imwrite(vis_path, vis_image_regions)
+            logging.info(f"Saved region visualization to {vis_path}")
+
+            if not regions:
+                logging.warning("YOLO did not detect any text regions. Falling back to full page OCR.")
+                # Preprocess the entire image for Tesseract
+                full_preprocessed_image = self.preprocess_image(image_for_detection, language='nep')
+                
+                # Save preprocessed image for debugging
+                preprocessed_path = str(self.preprocessed_dir / f"full_preprocessed_{Path(image_path).stem}.jpg")
+                cv2.imwrite(preprocessed_path, full_preprocessed_image)
+                logging.info(f"Saved full preprocessed image to {preprocessed_path}")
+
+                # Use Tesseract on the full image with a different PSM
+                custom_config = r'--oem 3 --psm 4 -l nep'
+                text = pytesseract.image_to_string(Image.fromarray(full_preprocessed_image), config=custom_config)
+                
+                final_text = self.clean_text(text)
+                refined_text = self.refine_text_with_gemma(final_text)
+                return {
+                    'text': refined_text,
+                    'regions': 0  # 0 regions detected by YOLO
+                }
+
             vis_image = image.copy()
             current_line = 0
             current_y = None
