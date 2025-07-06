@@ -2,7 +2,6 @@ services:
   - type: web
     name: easy-ocr-flask
     env: python
-    pythonVersion: "3.11"
     buildCommand: |
       apt-get update && \
       apt-get install -y tesseract-ocr tesseract-ocr-hin tesseract-ocr-eng && \

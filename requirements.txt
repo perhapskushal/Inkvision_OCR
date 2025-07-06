@@ -1,17 +1,17 @@
 # Core dependencies
-flask==2.3.3
+flask==3.0.0
 flask-cors==4.0.0
-werkzeug==2.3.7
-Pillow==10.2.0
+werkzeug==3.0.1
+Pillow==10.4.0
 numpy==1.26.4
 opencv-python-headless==4.9.0.80
 pytesseract==0.3.10
-reportlab==4.0.4
+reportlab==4.0.7
 
-# ML dependencies (Python 3.11 compatible)
+# ML dependencies (Python 3.13 compatible)
 ultralytics==8.1.0
-torch==2.2.0
-torchvision==0.17.0
+torch==2.5.0
+torchvision==0.20.0
 
 # Production server
 gunicorn==21.2.0
