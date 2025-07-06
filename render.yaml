@@ -1,18 +1,13 @@
 services:
   - type: web
-    name: flask-ocr-app
+    name: easy-ocr-flask
     env: python
-    plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app
+    buildCommand: |
+      apt-get update && \
+      apt-get install -y tesseract-ocr tesseract-ocr-hin tesseract-ocr-eng && \
+      pip install -r requirements.txt
+    startCommand: python app.py
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.9.16
-    buildFilter:
-      paths:
-        - requirements.txt
-        - app.py
-        - templates/**
-        - static/**
-        - fonts/**
-        - models/** 
+      - key: FLASK_ENV
+        value: production
+    healthCheckPath: /health

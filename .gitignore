@@ -57,7 +57,7 @@ temp/
 uploads/
 debug_output/
 
-# Model files (too large for Vercel)
+# Model files (too large for deployment)
 models/
 *.pth
 *.pt
@@ -79,14 +79,10 @@ test/
 # Archive
 archive/
 
-# Original files (backup)
-app_original.py
-requirements_original.txt
-
 # Environment variables
 .env
 .env.local
 .env.production
 
-# Vercel
-.vercel
+# Render
+.render-buildlogs/
